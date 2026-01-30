@@ -2,18 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.Heading{
-    font-family: Helvetica;
-}
-
-.faq-content {
+.content {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.faq-content.active {
+.overlay {
+    max-height: 0;
+    opacity: 0;
+
+}
+
+.content.active {
     max-height: 500px;
     opacity: 1;
+}
+
+.overlay.active {
+    max-height: 10000px;
+    opacity: 1;
+        margin: 1.5rem;
 }

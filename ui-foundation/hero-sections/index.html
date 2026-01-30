@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Productivity Tool</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section id="Hero">
-        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 p-6 min-h-screen">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 p-6 lg:min-h-screen">
             <div class="flex flex-col justify-center flex-1 max-w-2xl">
                 <h1 class="Heading justify-center text-5xl lg:text-6xl text-red-600 font-bold font-sans mb-6">Work Smarter. Execute Faster.</h1>
                 <div class="flex flex-wrap gap-4 py-6">
@@ -44,5 +45,38 @@
                 <p class="text-base text-gray-600">Get instant summaries and clarity from your work.</p>
             </div>
     </section>
+    <section id="FAQs" class="flex flex-col justify-center lg:min-h-screen">
+        <h1 class="text-4xl text-red-600 font-sans font-bold justify-center text-center mb-6">Frequently Asked Questions</h1>
+        <div class="grid grid-cols-1 gap-6">
+            <div class=" grid grid-col faq-item bg-gray-400 rounded-xl mx-6 mb-4">
+                <div class="faq-header font-bold font-sans flex flex-row justify-between p-6 text-xl">
+                    <h3>How does the AI help me stay productive?</h3>
+                    <button class="faq-btn font-bold text-3xl">+</button>
+                </div>
+                <div class="faq-content px-6 text-lg mb-6">
+                    <p class="grid-3">The AI analyzes your tasks and priorities to help you focus on what matters most.</p>
+                </div>
+            </div>
+            <div class=" grid grid-col faq-item bg-gray-400 rounded-xl mx-6 mb-4">
+                <div class="faq-header font-bold font-sans flex flex-row justify-between p-6 text-xl">
+                    <h3>Can I use this tool for team collaboration?</h3>
+                    <button class="faq-btn font-bold text-3xl">+</button>
+                </div>
+                <div class="faq-content px-6 text-lg mb-6">
+                    <p class="grid-3">Yes, you can share tasks, notes, and insights with your team in real time.</p>
+                </div>
+            </div>
+            <div class=" grid grid-col faq-item bg-gray-400 rounded-xl mx-6 mb-4">
+                <div class="faq-header font-bold font-sans flex flex-row justify-between p-6 text-xl">
+                    <h3>Is my data secure?</h3>
+                    <button class="faq-btn font-bold text-3xl">+</button>
+                </div>
+                <div class="faq-content px-6 text-lg mb-6">
+                    <p class="grid-3">Your data is encrypted and handled with industry-standard security practices.</p>
+                </div>
+            </div>                        
+        </div>
+    </section>
+    <script src="./index.js"></script>
 </body>
 </html>
